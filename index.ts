@@ -13,13 +13,13 @@ const state: State = {
   eva: {}
 };
 
-app.get("/", (req, res) => res.send(state));
+app.get("/state", (req, res) => res.send(state));
 
 app.post("/state", (req, res) => {
   const eva = req.body;
-  
   // TODO validate the payload first
   state.eva = eva;
+  
   wss.clients.forEach(client => {
     if (client.readyState === WebSocket.OPEN) {
       client.send(JSON.stringify(state.eva))
