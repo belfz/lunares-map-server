@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 const PORT = 8080;
 
-const wss = new WebSocket.Server({ port: 8081 });
+const wss = new WebSocket.Server({ port: 8079 });
 
 const state: State = {
   eva: {}
