@@ -1,11 +1,11 @@
 # lunares map server
 
-This is a simple HTTP + WS server for dispatching map events & warnings, that are broadcasted in real time to all client applications.
+This is a simple HTTP + WS server for dispatching map events & warnings, that are broadcasted in real time to all client applications. Use with [lunares map client](https://github.com/belfz/lunares-map-client).
 
 ## requirements
 
 1. node.js (tested with v15.8.0)
-2. yarn (tsted with v1.16.0)
+2. yarn (tested with v1.16.0)
 
 ## instructions to run
 
@@ -38,5 +38,5 @@ This is a simple HTTP + WS server for dispatching map events & warnings, that ar
 Issuing an HTTP POST in Postman to set the map's state
 ![postman](example-screenshots/postman.png)
 
-Map UI
+Map UI - [lunares map client](https://github.com/belfz/lunares-map-client).
 ![map-ui](example-screenshots/map-ui.png)
