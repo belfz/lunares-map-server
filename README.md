@@ -15,7 +15,7 @@ This is a simple HTTP + WS server for dispatching map events & warnings, that ar
 
 ## how to use
 
-1. in order to set a lunar map's state, simply send a POST rquest to `localhost:8080/state` (eg. using Postman app)
+1. in order to set a lunar map's state, simply send a POST request to `http://localhost:8080/state` (eg. using Postman app)
 2. example payload:
 ```json
 {
